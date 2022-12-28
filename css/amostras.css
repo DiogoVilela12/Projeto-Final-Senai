@@ -1,0 +1,31 @@
+.amostras {
+    background-image: url(../src/dubai.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 400px;
+}
+
+.amostras__div-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: calc(100% - 4rem);
+    padding: 2rem;
+
+    color: white;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+
+.amostras__texto-titulo {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.amostras__texto-descricao {
+    width: 70%;
+    font-size: 24px;
+    word-spacing: 4px;
+}

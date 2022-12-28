@@ -1,0 +1,89 @@
+.imoveis {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imoveis__card {
+    transition: ease-in 1s;
+    width: 260px;
+    height: 430px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imoveis__card-visivel {
+    width: 260px;
+    height: 430px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imoveis__card-img {
+    width: 260px;
+}
+
+.imoveis__card-titulo {
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+
+    align-self: flex-start;
+}
+
+.imoveis__card-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imoveis__card-definicoes {
+    width: 200px;
+    padding: 8px;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.imoveis__card-button {
+    background-color: rgb(197, 20, 20);
+    color: white;
+    box-shadow: 0px 5px 10px black;
+
+    font-size: 20px;
+    border: none;
+
+    height: 50px;
+    margin-top: 18px;
+    width: 90%;
+}
+
+.imoveis__button {
+    height: 430px;
+    padding: 20px;
+    margin: 32px;
+
+    background-color: white;
+    border: 1px solid black;
+}
+
+@media (min-width:1080px) {
+    .imoveis__button {
+        display: none;
+    }
+
+    .imoveis__card {
+        display: flex;
+        margin: 2rem;
+    }
+}

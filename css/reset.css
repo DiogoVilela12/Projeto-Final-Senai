@@ -1,4 +1,12 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E1ECF4;
+}
+
+.disable {
+    display: none;
 }

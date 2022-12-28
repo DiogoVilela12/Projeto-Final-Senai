@@ -5,107 +5,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/exibicao.css">
-    <title>Imobiliaria Games</title>
+    <title>Imobiliaria Dio</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <link rel="stylesheet" href="/css/amostras.css">
+    <link rel="stylesheet" href="./css/imoveis.css">
+    <link rel="stylesheet" href="css/rodape.css">
 </head>
 
 <body>
-    <header class="cabecalho container">
-        <a href=""><img class="cabecalho__logo" src="img/Logo.jpg" alt="Logo"></a>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon" id="cabecalho__botao"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="cabecalho__lista-navbar">
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="#">Cadastrar</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Aluguel</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Vendas</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Temporada</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Visitas</a>
-                    </li>
+    <header>
+        <nav class="cabecalho">
+            <img class="cabecalho__logo" src="src/Dio Logo.png" alt="Logo">
+            <nav class="cabecalho__nav">
+                <ul class="cabecalho__nav-lista">
+                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Home</a></li>
+                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Alugueis</a></li>
+                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Vendas</a></li>
+                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Temporada</a></li>
+                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Cadastro</a></li>
+                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Visitas</a></li>
                 </ul>
+            </nav>
+            <div class="cabecalho__menu">
+                <button class="cabecalho__button" data-nav-button>
+                    <img class="cabecalho__icon" src="src/menu icon.png" alt="Menu Icon">
+                </button>
             </div>
         </nav>
-    </header>
+        <div class="cabecalho__mobile disable">
+            <ul class="cabecalho__mobile-lista">
 
-    <main>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" data-pause>
+                <li class="cabecalho__mobile-item">
+                    <a class="cabecalho__mobile-link" href="">Home</a>
+                </li>
+                <li class="cabecalho__mobile-item">
+                    <a class="cabecalho__mobile-link" href="">Alugueis</a>
+                </li>
+                <li class="cabecalho__mobile-item">
+                    <a class="cabecalho__mobile-link" href="">Vendas</a>
+                </li>
+                <li class="cabecalho__mobile-item">
+                    <a class="cabecalho__mobile-link" href="">Temporada</a>
+                </li>
 
-                <div class="carousel-item active">
-                    <img class="d-block w-100"
-                        src="https://cdn.pocket-lint.com/r/s/970x/assets/images/159088-games-review-hands-on-elden-ring-review-image1-8nisaeviok-jpg.webp"
-                        alt="First slide">
-                    <div class="carousel-caption d-block d-md-block">
-                        <h5 class="carousel-item-texto">Elden Ring o Reino Ideal</h5>
-                        <p> testes</p>
+                <li class="cabecalho__mobile-item">
+                    <button data-nav-cadastro class="cabecalho__mobile-link-cadastro">Cadastro</button>
+
+                    <div class="cabecalho__dropdown-cadastro disable">
+                        <form class="cabecalho__dropdown-cadastro-form" action="button">
+                            <label class="cabecalho__dropdown-cadastro-label" for="text">Nome: <input
+                                    class="cabecalho__dropdown-cadastro-input" type="text"></label>
+                            <label class="cabecalho__dropdown-cadastro-label" for="text">Endereço: <input
+                                    class="cabecalho__dropdown-cadastro-input" type="text"></label>
+                            <label class="cabecalho__dropdown-cadastro-label" for="tel">Telefone: <input
+                                    class="cabecalho__dropdown-cadastro-input" type="tel"></label>
+                            <label class="cabecalho__dropdown-cadastro-label" for="date">Data: <input
+                                    class="cabecalho__dropdown-cadastro-input" type="date"></label>
+
+                        </form>
+                        <button class="cabecalho__dropdown-cadastro-button">CADASTRAR</button>
                     </div>
-                </div>
+                </li>
 
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://cdn.pocket-lint.com/r/s/970x/assets/images/159088-games-review-hands-on-elden-ring-review-image1-8nisaeviok-jpg.webp"
-                        alt="First slide">
-                    <div class="carousel-caption d-block d-md-block">
-                        <h5 class="carousel-item-texto">Elden Ring o Reino Ideal</h5>
-                        <p> testes</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://cdn.pocket-lint.com/r/s/970x/assets/images/159088-games-review-hands-on-elden-ring-review-image1-8nisaeviok-jpg.webp"
-                        alt="First slide">
-                    <div class="carousel-caption d-block d-md-block">
-                        <h5 class="carousel-item-texto">Elden Ring o Reino Ideal</h5>
-                        <p> testes</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <li class="cabecalho__mobile-item"><a class="cabecalho__mobile-link" href="">Visitas</a></li>
+            </ul>
         </div>
+    </header>
+    <main>
+
+        <section class="amostras">
+            <div class="amostras__div-texto">
+                <h2 class="amostras__texto-titulo">Os melhores predios do Mundo.</h2>
+                <p class="amostras__texto-descricao">Sua oportunidade de morar em Dubai está aqui! Este imóvel com 3
+                    dormitórios, varanda gourmet, cozinha americana linda e planejada.</p>
+            </div>
+        </section>
+
+        <section class="imoveis">
+            <button class="imoveis__button" data-left-button>
+                <img src="src/arrow-left.svg" alt="">
+            </button>
+
+
+            <div data-carrosel-item class="imoveis__card imoveis__card-visivel">
+                <img src="src/varanda-gourmet.jpg" alt="Varanda" class="imoveis__card-img">
+                <h3 class="imoveis__card-titulo">Prestige Residence</h3>
+                <div class="imoveis__card-descricao">
+                    <p class="imoveis__card-definicoes">37 a 52m²</p>
+                    <p class="imoveis__card-definicoes">2 Quartos</p>
+                    <p class="imoveis__card-definicoes">1 Vaga de Garagem</p>
+                </div>
+                <button class="imoveis__card-button">Conheça o Imovel</button>
+            </div>
+
+            <div data-carrosel-item class="imoveis__card">
+                <img src="src/pousada-arte-da-natureza.jpg" alt="Varanda" class="imoveis__card-img">
+                <h3 class="imoveis__card-titulo">Caesars Palace Dubai</h3>
+                <div class="imoveis__card-descricao">
+                    <p class="imoveis__card-definicoes">70 a 100m²</p>
+                    <p class="imoveis__card-definicoes">4 Quartos</p>
+                    <p class="imoveis__card-definicoes">2 Vaga de Garagem</p>
+                </div>
+                <button class="imoveis__card-button">Conheça o Imovel</button>
+            </div>
+
+            <div data-carrosel-item class="imoveis__card">
+                <img src="src/hotel-da-praca.jpg" alt="Varanda" class="imoveis__card-img">
+                <h3 class="imoveis__card-titulo">Prestige Residence</h3>
+                <div class="imoveis__card-descricao">
+                    <p class="imoveis__card-definicoes">40 a 52m²</p>
+                    <p class="imoveis__card-definicoes">2 Quartos</p>
+                    <p class="imoveis__card-definicoes">Não ha vagas de Garagem</p>
+                </div>
+                <button class="imoveis__card-button">Conheça o Imovel</button>
+            </div>
+
+
+            <button class="imoveis__button" data-right-button>
+                <img src="src/arrow-right.svg" alt="">
+            </button>
+        </section>
+
+        
     </main>
-
+    <footer class="rodape">
+        <iframe class="rodape__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163406.5242734263!2d55.20136672871122!3d25.17595440064869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20Emirados%20%C3%81rabes%20Unidos!5e0!3m2!1spt-BR!2sbr!4v1670890634580!5m2!1spt-BR!2sbr"
+        width="300" height="200" style="border:0;"></iframe>
+        <div class="rodape__social">
+            <a class="rodape__link" href="#">Instagram</a>
+            <a class="rodape__link" href="#">Twitter</a>
+            <a class="rodape__link" href="#">Youtube</a>
+            <a class="rodape__link" href="#">TikTok</a>
+        </div>
+        <p class="rodape__texto">Feito por Diogo Vilela, projeto realizado no SENAI.</p>
+    </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+<script src="js/carrosselImoveis.js"></script>
 
 </html>

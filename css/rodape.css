@@ -1,0 +1,33 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B2BBC2;
+    padding: 1rem;
+}
+
+.rodape__texto {
+    padding: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rodape__frame {
+    align-self: center;
+}
+
+.rodape__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape__link {
+    color: red;
+
+    padding: 8px;
+
+    text-decoration: none;
+    font-size: 20px;
+}
