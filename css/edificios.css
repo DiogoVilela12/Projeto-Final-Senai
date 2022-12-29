@@ -1,0 +1,48 @@
+.edificio {
+    display: flex;
+    flex-direction: column;
+}
+
+.edificio__card-cinza {
+    background-color: #B2BBC2;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.edificio__card {
+    display: flex;
+}
+
+.edificio__exibicao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+.edificio__titulo {
+
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.edificio__descricao {
+    text-align: justify;
+
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.edificio__card-img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .edificio__card-img {
+        display: block;
+        width: 50%;
+        height: 450px;
+    }
+}

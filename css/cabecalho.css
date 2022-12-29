@@ -101,9 +101,9 @@
     width: 100%;
 }
 
-.cabecalho__mobile-link-cadastro {
-    background-color: white;
-    
+.cabecalho__mobile-link-cadastro { 
+    background-color: #E1ECF4;
+
     width: 100%;
     height: 100%;
     padding: 8px;
@@ -129,6 +129,7 @@
 }
 
 .cabecalho__dropdown-cadastro-input {
+    background-color: #E1ECF4;
     width: 200px;
     margin: 4px;
     border: none;
@@ -143,6 +144,7 @@
 }
 
 .cabecalho__dropdown-cadastro-button {
+    background-color: #E1ECF4;
     margin-top: 8px;
     padding: 8px;
     border-radius: 20px;
