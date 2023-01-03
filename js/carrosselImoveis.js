@@ -29,5 +29,4 @@ leftButton.addEventListener('click', () => {
         slide.classList.remove('imoveis__card-visivel');
     });
     slides[cont].classList.add('imoveis__card-visivel');
-    console.log(cont)
 });

@@ -1,0 +1,21 @@
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 400px;
+
+    background-color: #B2BBC2;
+    margin-top: 2rem;
+}
+
+.map__titulo {
+    font-size: 50px;
+    margin: 1rem;
+    font-weight: 200;
+}
+
+.map__mapa {
+    width: 70%;
+}

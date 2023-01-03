@@ -1,20 +1,17 @@
 .rodape {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #B2BBC2;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: black;
     padding: 1rem;
 }
 
 .rodape__texto {
+    color: white;
     padding: 8px;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
     text-align: center;
-}
-
-.rodape__frame {
-    align-self: center;
 }
 
 .rodape__social {
@@ -24,10 +21,20 @@
 }
 
 .rodape__link {
-    color: red;
+    color: white;
 
     padding: 8px;
 
     text-decoration: none;
     font-size: 20px;
+}
+
+.rodape__link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .rodape {
+        flex-direction: row-reverse;
+    }
 }
