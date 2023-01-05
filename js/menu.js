@@ -25,3 +25,11 @@ menuCadastroButton = document.querySelector('[data-nav-cadastro]');
 menuCadastroButton.addEventListener('click', function() {
     handleAbrirMenu('cabecalho__dropdown-cadastro')
 });
+
+// Essa função serve para o dropdown do cadastro versão dekstop
+
+const buttonCadastro = document.querySelector('[data-cadastro-button]');
+
+buttonCadastro.addEventListener('click', function () {
+    handleAbrirMenu('cabecalho__cadastro')
+})

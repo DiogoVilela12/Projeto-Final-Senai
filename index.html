@@ -25,7 +25,7 @@
                     <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Alugueis</a></li>
                     <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Vendas</a></li>
                     <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Temporada</a></li>
-                    <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Cadastro</a></li>
+                    <li data-cadastro-button class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="#">Cadastro</a></li>
                     <li class="cabecalho__nav-item"><a class="cabecalho__nav-link" href="">Visitas</a></li>
                 </ul>
             </nav>
@@ -35,7 +35,21 @@
                 </button>
             </div>
         </nav>
-        <div class="cabecalho__mobile disable">
+        <div data-cadastro class="cabecalho__cadastro disable">
+            <form class="cabecalho__cadastro-form" action="button">
+                <label class="cabecalho__dropdown-cadastro-label" for="text">Nome: <input
+                        class="cabecalho__dropdown-cadastro-input" type="text"></label>
+                <label class="cabecalho__dropdown-cadastro-label" for="text">Endereço: <input
+                        class="cabecalho__dropdown-cadastro-input" type="text"></label>
+                <label class="cabecalho__dropdown-cadastro-label" for="tel">Telefone: <input
+                        class="cabecalho__dropdown-cadastro-input" type="tel"></label>
+                <label class="cabecalho__dropdown-cadastro-label" for="date">Data: <input
+                        class="cabecalho__dropdown-cadastro-input" type="date"></label>
+                <button class="cabecalho__dropdown-cadastro-button">CADASTRAR</button>        
+                </form>
+    
+        </div>
+        <div class="cabecalho__mobile">
             <ul class="cabecalho__mobile-lista">
 
                 <li class="cabecalho__mobile-item">

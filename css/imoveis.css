@@ -6,7 +6,7 @@
 }
 
 .imoveis__card {
-    transition: ease-in 1s;
+    transition: all .5s;
     width: 260px;
     height: 430px;
     background-color: white;
@@ -15,6 +15,11 @@
     display: none;
     flex-direction: column;
     align-items: center;
+}
+
+.imoveis__card:hover {
+    width: 265px;
+    height: 435px;
 }
 
 .imoveis__card-visivel {
@@ -29,7 +34,7 @@
 }
 
 .imoveis__card-img {
-    width: 260px;
+    width: 100%;
 }
 
 .imoveis__card-titulo {
@@ -66,6 +71,12 @@
     height: 50px;
     margin-top: 18px;
     width: 90%;
+}
+
+.imoveis__card-button:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgb(129, 12, 12);
 }
 
 .imoveis__button {

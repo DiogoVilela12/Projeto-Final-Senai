@@ -61,6 +61,20 @@
     width: 40px;
 }
 
+/* Formulario de Cadastro dekstop*/
+
+.cabecalho__cadastro {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cabecalho__cadastro-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
 /* Menu Mobile */
 
 .cabecalho__mobile-lista {
